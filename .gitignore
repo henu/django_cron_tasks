@@ -1,0 +1,4 @@
+*.pyc
+/build
+/dist
+/django_cron_tasks.egg-info
