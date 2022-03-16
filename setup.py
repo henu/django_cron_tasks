@@ -4,8 +4,13 @@ from setuptools import setup
 setup(
     name='django_cron_tasks',
     description='Django background tasks, ran via crontab.',
-    version='1.0.0',
-    packages=['django_cron_tasks'],
+    version='1.0.1',
+    packages=[
+        'django_cron_tasks',
+        'django_cron_tasks.management',
+        'django_cron_tasks.management.commands',
+        'django_cron_tasks.migrations',
+    ],
     author='Henrik Heino',
     author_email='henrik.heino@gmail.com',
     license='MIT License',
