@@ -4,5 +4,5 @@ from . import models
 
 @admin.register(models.TaskResult)
 class TaskResultAdmin(admin.ModelAdmin):
-    list_display = ('name', 'started_at', 'finished_at', 'success')
-    readonly_fields = ('name', 'started_at', 'finished_at', 'success', 'output')
+    list_display = ('name', 'created_at', 'started_at', 'finished_at', 'started_by_scheduler', 'success')
+    readonly_fields = ('name', 'created_at', 'started_at', 'finished_at', 'started_by_scheduler', 'success', 'output')
