@@ -4,7 +4,7 @@ from setuptools import setup
 setup(
     name='django_cron_tasks',
     description='Django background tasks, ran via crontab.',
-    version='1.0.1',
+    version='1.1.0',
     packages=[
         'django_cron_tasks',
         'django_cron_tasks.management',
