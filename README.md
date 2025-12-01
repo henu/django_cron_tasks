@@ -36,8 +36,8 @@ How to use
     ./manage.py migrate
     ```
 
-4. Call this in your crontab:
+4. Add this to your crontab:
 
     ```
-    ./manage.py run_cron_tasks
+    * * * * * cd /your_project/ && /path_to_your_venv/bin/python manage.py run_cron_tasks
     ```
