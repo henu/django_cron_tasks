@@ -19,3 +19,11 @@ class TaskResult(models.Model):
         index_together = (
             ('name', 'started_at'),
         )
+
+
+class DbLock(models.Model):
+    name = models.CharField(max_length=250, unique=True)
+    locked_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.name
